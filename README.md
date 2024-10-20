@@ -1,26 +1,32 @@
 ## Purpose
-
-Our System provide structured user interface & Services for hostel so they can easily manage students details in the system with rooms that is assigned to the student.We have implemented *Role Based authentication* using *Identity* of *EntityFrameworkCore(.NET MVC Core)* .
+Our Application is used as a Marketing App. In this  One seller is able to Sell the Products to buyer.
 
 ## Roles & Functionality
 
 ### Admin
 
-> Add & Manage Rooms
+> Add & Edit Category
 
-- Admin will be able to create room by providing room details.
-- Admin will be able to change the data of a room and also will be able to delete a room.
+- Admin will able To add Category and also Edit the Category
 
-> Register student & assign room to that student
+> See User Review and Ban User
 
-- If a student want to have a room in our hostel, he will need to approach admin. Admin will enter the data given by student and assign the room to that student as per his choice or room availability.
-- student will be given password by admin at the time of registration.
+- Admin  is able to See the Review about Product Written by Users
+- If Admin Found  unwanted behaviour from  user then he is able to Ban  that Particuler User and He also have rights to Unban users
 
-### Student
+### Customer
 
-> View Profile
+> Create Products
 
-- Student will be able to see the profile in which room details of that student will be displayed along will all room-mates.
+- Customer is able to create Products for Selling Purpose.
+
+ > See Products
+
+- Customer is able to see their created Products as well as products bought by them and products sell by them
+- Customer can review the seller as well
+- customer caan Edit their Profile
+
+  
 
 ## How to Run this project ?
 
