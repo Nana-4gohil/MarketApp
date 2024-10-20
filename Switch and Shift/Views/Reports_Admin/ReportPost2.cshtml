@@ -1,0 +1,120 @@
+﻿@model IEnumerable<Switch_and_Shift.Models.Reports_Admin>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Layouts/_AdminLayout.cshtml";
+    int checkIfEmpty = Model.Count();
+}
+
+
+    <h1>REPORTED USER LIST</h1>
+
+    @if (checkIfEmpty == 0)
+    {
+        <h1 style="text-align: center; color:#6406B2;margin-top: 5%;
+font-family: Saira Semi Condensed, sans-serif; font-weight: bold; margin-bottom: 5%;">
+            NO DATA
+        </h1>
+        <div class="banner-image image-container" style="background-color: #F2F2F2;">
+            <img src="~/website_images/box.png" class="my_image_class" alt="" style="max-width: 80%;display: block; margin-left: auto; margin-right:
+    auto; width: 25%;">
+
+        </div>
+    }
+
+
+    @foreach (var item in Model)
+    {
+        <div class="section2-product-details" style="margin: 70px; margin-left: 10%; margin-right: 10%">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h5 class="mb-0 seller_name">Reporter Name :</h5>
+                                    </div>
+                                    <div class="col-sm-7 text-secondary">@Html.DisplayFor(model => item.reporter_name)</div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h5 class="mb-0 seller_email">Reporter Email :</h5>
+                                    </div>
+                                    <div class="col-sm-7 text-secondary">@Html.DisplayFor(model => item.reporter_email)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <div class="box2 box2-modified" style="margin-top:5%">
+                            <img id="img2" alt="" style="height:100px; width:100px;" src="~/website_images/complain.png" />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h5 class="mb-0 seller_name">Reportee Name :</h5>
+                                    </div>
+                                    <div class="col-sm-7 text-secondary">@Html.DisplayFor(model => item.reportee_name)</div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h5 class="mb-0 seller_email">Reportee Email :</h5>
+                                    </div>
+                                    <div class="col-sm-7 text-secondary">@Html.DisplayFor(model => item.reportee_email)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               
+
+
+            </div>
+        </div>
+    }
+
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
