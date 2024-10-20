@@ -24,7 +24,7 @@ Our Application is used as a Marketing App. In this  One seller is able to Sell 
 
 - Customer is able to see their created Products as well as products bought by them and products sell by them
 - Customer can review the seller as well
-- customer caan Edit their Profile
+- customer can Edit their Profile
 
   
 
