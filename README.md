@@ -31,17 +31,17 @@ Our Application is used as a Marketing App. In this  One seller is able to Sell 
 ## How to Run this project ?
 
 > Clone this Repository
-
-
-git clone https://github.com/DigitalGit2003/HostelManagementSystem.git
+> 
+git clone https://github.com/Nana-4gohil/MarketApp.git
 
 
 ### 1. appsettings.json
 
 json
-"ConnectionStrings": {
-  "ConnectionName": "server=SERVERNAME;database=DATABASENAME;Integrated Security=true;"
-},
+ "ConnectionStrings": {
+   "DefaultConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Database=MarketDB;Integrated Security=True;Connect 
+    Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"
+ },
 
 
 ### 2. Install Nuget Packages
@@ -68,7 +68,7 @@ update-database
 
 | Application        | Tech                  |
 | ------------------ | --------------------- |
-| Backend / Frontend | ASP .NET 7 / Boostrap |
+| Backend / Frontend | ASP .NET 5 / Boostrap |
 | DataBase           | SQL (SSMS)            |
 
 > Team members
@@ -77,20 +77,16 @@ update-database
 <table>
   <tr>
     <td align="center">
-        <a href="https://github.com/DigitalGit2003/HostelManagementSystem
-/graphs/contributors">
-            <img src="https://github.com/DigitalGit2003.png" width="100px;" alt=""/>
+        <a href="https://github.com/Nana-4gohil/MarketApp.git">
             <br />
-            <sub><b>Gautam-Lathiya</b></sub>
+            <sub><b>Hadiyal Mehul</b></sub>
         </a>
         <br />
     </td>
     <td align="center">
-        <a href="https://github.com/DigitalGit2003/HostelManagementSystem
-/graphs/contributors">
-            <img src="https://github.com/Sandip-Kanzariya.png" width="100px;" alt=""/>
+        <a href="https://github.com/Nana-4gohil/MarketApp.git">
             <br />
-            <sub><b>Sandip-Kanzariya</b></sub>
+            <sub><b>Gohil Nana</b></sub>
         </a>
         <br />
     </td>
